@@ -1,7 +1,9 @@
 const path = require('path');
 const webpack = require('webpack')
 module.exports = {
-    publicPath: './',
+    publicPath: process.env.NODE_ENV === 'production'
+        ? '/my-cli/'
+        : '/',
     outputDir: 'dist',
     devServer: {
         port: "8035",
