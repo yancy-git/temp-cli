@@ -2,13 +2,20 @@
 
 > A Vue.js project
 
+> 集成vue-axios, 并做了简单的二次封装
+> 集成sass
+> 集成vue-router
+> 集成vue-x
+> 自定义工具包
+> 自定义flex类样式
+
 ## Build Setup
 
 ``` bash
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at http://127.0.0.1:8035
 npm run dev
 
 # build for production with minification

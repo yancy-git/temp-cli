@@ -1,0 +1,80 @@
+@mixin setFlex($direction: row, $jc: center, $ais: center) {
+  display: flex;
+  flex-direction: $direction; //主轴方向
+  justify-content: $jc; //主轴对齐
+  align-items: $ais; //交叉轴对齐方式
+}
+//横向flex
+.flex-r-fs-fs {
+    @include setFlex(row, flex-start, flex-start)
+}
+.flex-r-fs-c, .flex-r-fs{
+    @include setFlex(row, flex-start, center)
+}
+.flex-r-fs-fe{
+    @include setFlex(row, flex-start, flex-end)
+}
+
+.flex-r-c-fs{
+    @include setFlex(row, center, flex-start)
+}
+.flex, .flex-r, .flex-r-c, .flex-r-c-c{
+    @include setFlex(row, center, center)
+}
+.flex-r-c-fe{
+    @include setFlex(row, center, flex-end)
+}
+
+.flex-r-fe-fs{
+    @include setFlex(row, flex-end, flex-start)
+}
+.flex-r-fe, .flex-r-fe-c{
+    @include setFlex(row, flex-end, center)
+}
+.flex-r-fe-fe{
+    @include setFlex(row, flex-end, flex-end)
+}
+
+//特殊横向
+.flex-r-sb-fe{
+    @include setFlex(row, space-between, flex-end);
+}
+.flex-r-sb-c{
+    @include setFlex(row, space-between, center);
+}
+.flxe-r-fs-fe{
+    @include setFlex(row, flex-start, flex-end);
+}
+
+//纵向flex
+.flex-c-fs-fs {
+    @include setFlex(column, flex-start, flex-start)
+}
+.flex-c-fs-c, .flex-c-fs{
+    @include setFlex(column, flex-start, center)
+}
+.flex-c-fs-fe{
+    @include setFlex(column, flex-start, flex-end)
+}
+
+.flex-c-c-fs{
+    @include setFlex(column, center, flex-start)
+}
+.flex-c, .flex-c-c, .flex-c-c-c{
+    @include setFlex(column, center, center)
+}
+.flex-c-c-fe{
+    @include setFlex(column, center, flex-end)
+}
+
+.flex-c-fe-fs{
+    @include setFlex(column, flex-end, flex-start)
+}
+.flex-c-fe, .flex-c-fe-c{
+    @include setFlex(column, flex-end, center)
+}
+.flex-c-fe-fe{
+    @include setFlex(column, flex-end, flex-end)
+}
+
+

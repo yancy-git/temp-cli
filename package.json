@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1",
     "style-loader": "^2.0.0",
     "vue": "^2.5.2",
     "vue-axios": "^3.0.1",

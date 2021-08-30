@@ -15,13 +15,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: () => import('@/components/HelloWorld')
+      name: 'index',
+      component: () => import('@/views/index')
     },
-    {
-      path: '/tes',
-      name: 'Tes',
-      component: () => import('@/components/Tes')
-    }
   ]
 })
